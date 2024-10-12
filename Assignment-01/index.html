@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="d-flex counter">
+      <nav
+        class="border-end vh-100 px-4 py-4"
+        id="sidebar">
+        <a href="#">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQte0mMpk8fKbJADO-8Dn84PuWhMkTeVstflI2XkmY6ZICN8JYP"
+            alt="Logo"
+            width="150px"
+          />
+        </a>
+        <ul class="list-unstyled mt-5">
+          <h6 class="px-2 menu-txt">MENU</h6>
+          <li>
+            <a href="#" class="d-block py-2 nav-link active"
+              ><i class="px-2 bi bi-grid"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="./pages/Users/users.html" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-people"></i> Users</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-archive"></i> Products</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-credit-card"></i> Bill Payments</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-display"></i> Devices Repair</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-cash"></i> Transactions</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 bi bi-cart"></i> Orders</a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-block py-2 nav-link"
+              ><i class="px-2 b bi-arrow-left-square"></i> Logout</a
+            >
+          </li>
+        </ul>
+      </nav> 
+      <!-- Main Content -->
+      <div class="dashboard w-100">
+        <div
+          class="d-flex justify-content-between align-items-center border-bottom p-3"
+        >
+          <div class="d-flex align-items-center">
+            <i class="bi bi-grid" style="font-size: 1.5rem"></i>
+            <h3 class="dashboard-txt mb-0 ms-2">Dashboard</h3>
+          </div>
+          <div class="d-flex align-items-center">
+            <a href="#"><i class="bi bi-bell notification px-3"></i></a>
+            <div class="text-end me-3">
+              <span>Hello, <strong>Jane</strong><br />Admin</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="User"
+              class="rounded-3 ms-3"
+              width="40"
+              height="40"
+            />
+          </div>
+        </div>
+        <div class="cards d-flex justify-content-between p-3 flex-wrap">
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2 card1"
+            style="width: 350px; background-color: #07223c"
+          >
+            <div class="text-start">
+              <p class="mb-2">Today Orders</p>
+              <p class="fs-4 price">$5000</p>
+            </div>
+            <div
+              class="image-sec rounded-2 px-3 py-2"
+              style="background-color: white"
+            >
+              <i
+                class="bi bi-cart3"
+                style="color: #0153a3; font-size: 2rem"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2 card2"
+            style="width: 350px; background-color: #ab2814"
+          >
+            <div class="text-start">
+              <p class="mb-1">This Month</p>
+              <p class="fs-4 price">$49,700</p>
+            </div>
+            <div
+              class="image-sec rounded-2 px-3 py-2"
+              style="background-color: #fff"
+            >
+              <i
+                class="bi bi-cart3"
+                style="color: #ab2814; font-size: 2rem"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2 card3"
+            style="width: 350px; background-color: #0153a3"
+          >
+            <div class="text-start">
+              <p class="mb-1">Total Orders</p>
+              <p class="fs-4 price">$350,905</p>
+            </div>
+            <div
+              class="image-sec rounded-2 px-3 py-2"
+              style="background-color: white"
+            >
+              <i
+                class="bi bi-cart3"
+                style="color: #0153a3; font-size: 2rem"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards cards2 d-flex justify-content-between px-3 flex-wrap">
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2"
+            style="width: 250px; "
+          >
+            <div class="text-start box4" >
+              <p class="mb-1">Total Orders</p>
+              <p class="fs-4 amount">227</p>
+            </div>
+            <div class="image-sec rounded-2">
+              <i class="bi bi-cart3"></i>
+            </div>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2"
+            style="width: 250px"
+          >
+            <div class="text-start box4">
+              <p class="mb-1">Order Pending</p>
+              <p class="fs-4 amount">120</p>
+            </div>
+            <div class="image-sec rounded-2">
+              <i class="bi bi-cart3"></i>
+            </div>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2"
+            style="width: 250px"
+          >
+            <div class="text-start box4">
+              <p class="mb-1">Order Processing</p>
+              <p class="fs-4 amount">70</p>
+            </div>
+            <div class="image-sec rounded-2">
+              <i class="bi bi-cart3"></i>
+            </div>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-between p-3 border rounded-2"
+            style="width: 250px"
+          >
+            <div class="text-start box4">
+              <p class="mb-1">Order Delivered</p>
+              <p class="fs-4 amount">370</p>
+            </div>
+            <div class="image-sec rounded-2">
+              <i class="bi bi-cart3"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3 mt-3">
+          <h4>Recent Orders</h4>
+          <div class="col-12">
+            <table class="table">
+              <thead class="table-light">
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Phone</th>
+                  <th>Payment Method</th>
+                  <th>Amount</th>
+                  <th>Order Status</th>
+                  <th>Actions</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Emma Jane</td>
+                  <td>+82 8984988</td>
+                  <td>COD</td>
+                  <td>$500.00</td>
+                  <td><span class="badge delivered">Delivered</span></td>
+                  <td>
+                    <button class="btn btn-outline-secondary btn-sm">
+                        Delivery <i class="bi bi-chevron-compact-down"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>+82 8984988</td>
+                  <td>Card</td>
+                  <td>$649.00</td>
+                  <td><span class="badge Cancelled">Cancelled</span></td>
+                  <td>
+                    <button class="btn btn-outline-secondary btn-sm">
+                      Cancelled <i class="bi bi-chevron-compact-down"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Benjmin</td>
+                    <td>+82 8984988</td>
+                    <td>COD</td>
+                    <td>$500.00</td>
+                    <td><span class="badge pending">pending</span></td>
+                    <td>
+                      <button class="btn btn-outline-secondary btn-sm">
+                        pending <i class="bi bi-chevron-compact-down"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Emma jane</td>
+                    <td>+82 8984988</td>
+                    <td>Card</td>
+                    <td>$649.00</td>
+                    <td><span class="badge delivered">Delivered</span></td>
+                    <td>
+                      <button class="btn btn-outline-secondary btn-sm">
+                        Delivery <i class="bi bi-chevron-compact-down"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>+82 8984988</td>
+                    <td>Card</td>
+                    <td>$649.00</td>
+                    <td><span class="badge Cancelled">Cancelled</span></td>
+                    <td>
+                      <button class="btn btn-outline-secondary btn-sm">
+                        Cancelled <i class="bi bi-chevron-compact-down"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
